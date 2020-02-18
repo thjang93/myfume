@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Gugi|Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  font-family: 'Noto Sans KR', sans-serif;
+	text-decoration: none;
+	color: inherit;
+}
+html, body { height: 100%; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+hr { border-color: #B993D6; }
+pre { white-space: pre-wrap; }
+
+main { min-height: 100%; padding: 94px 0; }
+main .content { max-width: 1024px; margin: 0 auto; padding: 62px 10px; }
+main .content .wrap { max-width: 600px; margin: 0 auto; padding: 42px 18px 18px; border: 1px solid #eaeaea; border-top: 2px solid #B993D6 }
+main .content .outside { border: none !important; }
+.title { width: 100%; margin-bottom: 42px; font-size: 18px; font-weight: 700; text-align: center; color: #444; }
+.btn-box { margin-top: 50px; text-align: center; }
+.btn-box button { width: 100%; padding: 10px 8px; font-size: 12px; color: #FFF; background: linear-gradient(to right, #8CA6DB, #B993D6); border: none; outline: none; cursor: pointer; }
+.btn-join { width: 60px; margin: 0 auto; padding: 42px 0; text-align: center; font-size: 15px; color: #B993D6; cursor: pointer; }
+.form-row { text-align: center; margin-bottom: 8px;}
+.form-row input, textarea { width: 100%; padding: 10px 8px; border: 1px solid #eaeaea; box-sizing: border-box; font-size: 12px; outline: none; resize: none; }
+input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 18px; background: #eaeaea; outline: none; margin: 0; }
+input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none;width: 18px; height: 18px; background: #B993D6; cursor: pointer; }
+input[type=range]::-moz-range-thumb { width: 18px; height: 18px; background: #B993D6; cursor: pointer; }
+::placeholder { color: #aaa; }
+.alert { margin-bottom: 8px; padding-left: 5px; font-size: 12px; }
+.alert.success { color: green; }
+.alert.failed { color: red; }
+.star { color: #ffc745; }
+.font-12 { font-size: 12px; }
+.clearfix:after { content:""; display:table; clear:both; }
+
+/****** HEADER *****/
+header { width: 100%; border-bottom: 1px solid #eee; padding: 1.3rem 0; position: fixed; top: 0; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px; background: #fff; z-index: 1; }
+header nav { max-width: 1024px; margin: 0 auto; font-size: 0rem; }
+header nav div { width: 20%; padding-left: 12px; display: inline-block; font-size: 2rem; text-align: center; color: #444; box-sizing: border-box; }
+header nav div a { cursor: pointer; font-family: 'Satisfy', cursive; }
+header nav ul { width: 80%; display: inline-block; text-align: right; font-size: 1rem; }
+header nav ul li { margin: 1rem; padding: 0.1rem 0.3rem; display: inline-block; color: #444; cursor: pointer; position: relative; z-index: 0; }
+header nav ul li:hover { color: #B993D6; transition: all 0.3s; }
+
+/****** 배너 *****/
+main { width: 100%; }
+main .banner { height: 230px; padding: 20px; background: #B993D6; background: linear-gradient(to right, #8CA6DB, #B993D6); }
+main .banner .info { max-width: 600px; padding-top: 85px; margin: 0 auto; font-size: 2rem; line-height: 1.2; color: #FFF; }
+
+/***** 메인 *****/
+main .search .search-form .notes { margin-bottom: 10px; font-size: 0; text-align: left; }
+main .search .search-form .notes .checkAll { margin-bottom: 5px; color: #aaa; font-size: 13px; cursor: pointer; }
+main .search .search-form .notes .checkAll span { cursor: pointer; }
+main .search .search-form .notes .checkAll .on { color: #B993D6; }
+main .search .search-form .notes .checkbox { width: 20%; padding: 1px; display: inline-block; box-sizing: border-box; }
+main .search .search-form .notes .checkbox label { }
+main .search .search-form .notes .checkbox input[type=checkbox] { position: absolute; opacity: 0; height: 0; width: 0; cursor: pointer; }
+main .search .search-form .notes .checkbox .text { width: 100%; padding: 10px 0; font-size: 12px; text-align: center; color: #aaa; display: inline-block; border: 1px solid #eaeaea; cursor: pointer; box-sizing: border-box; }
+main .search .search-form .notes input:checked ~ .text { color: #FFF; border-color: #B993D6; background: #B993D6; }
+/***** 목록 *****/
+main .search .list { margin-top: 50px; font-size: 0; }
+main .search .list .list-none { border: 1px solid #eaeaea; padding: 30px; font-size: 15px; text-align: center; color: #aaa; }
+main .search .list .item { cursor: pointer; width: 50%; padding: 0 3px 3px 0; font-size: 13px; display: inline-block; box-sizing: border-box; }
+main .search .list .item:nth-child(even) { padding-right: 0; }
+main .search .list .item .desc { padding: 15px; border: 1px solid #eaeaea; }
+main .search .list .item .desc .thumbnamil { height: 300px; display: flex; align-items: center; justify-content: center; }
+main .search .list .item .desc .thumbnamil img { max-width: 100%; max-height: 100%; margin: 0 auto; display: block; }
+main .search .list .item .desc .tit, main .search .list .item .desc .score { margin: 18px 0 10px 0; font-size: 15px; font-weight: 700; color: #444; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+main .search .list .item .desc .score span { margin-right: 5px; }
+
+/***** 로그인 페이지 *****/
+main .login { padding-bottom: 42px !important; }
+main .login .login-form { }
+
+/***** 회원가입 페이지 *****/
+main .join { padding-bottom: 42px !important; }
+main .join .join-form {  }
+
+/***** 비밀번호 변경 *****/
+main .password { padding-bottom: 42px !important; }
+main .join .join-form {  }
+
+/***** 상세/리뷰 페이지 ******/
+main .view .image { }
+main .view .image img { width: 100%; max-width: 350px; margin: 0 auto; display: block; }
+main .view .desc { margin: 20px 0; font-size: 14px; line-height: 1.5; color: #444; }
+main .view .notes { margin-bottom: 80px; }
+main .view .notes .note { margin-bottom: 5px; }
+main .view .notes .note .tit { width: 78px; padding: 3px 0; font-size: 13px; text-align: center; background: #8CA6DB; background: linear-gradient(to right, #8CA6DB, #B993D6); color: #FFF; display: inline-block; }
+main .view .notes .note .txt { font-size: 13px; color: #444; }
+main .view .review {}
+main .view .review .tit { font-size: 15px; margin: 8px 0; }
+main .view .review .longevity { margin-bottom: 20px; }
+main .view .review .longevity .txt { margin: 15px 0 6px 0; font-size:12px; color: red; }
+main .view .review .rate { font-size: 0; text-align: left; }
+main .view .review .rate .radio { width: 20%; padding: 1px; font-size: 0; display: inline-block; box-sizing: border-box; }
+main .view .review .rate .radio label { }
+main .view .review .rate .radio input[type=radio] { position: absolute; opacity: 0; height: 0; width: 0; cursor: pointer; }
+main .view .review .rate .radio .text { width: 100%; padding: 10px 0; font-size: 12px; text-align: center; color: #aaa; display: inline-block; border: 1px solid #eaeaea; cursor: pointer; box-sizing: border-box; }
+main .view .review .rate .radio input:checked ~ .text { color: #FFF; border-color: #B993D6; background: #B993D6; }
+main .view .review .rate .comment { font-size: 14px; color: #444; }
+main .view .review .reviews { margin-top: 30px; }
+main .view .review .reviews .list { }
+main .view .review .reviews .list .review-none { border: 1px solid #eaeaea; padding: 30px; font-size: 15px; text-align: center; color: #aaa; }
+main .view .review .reviews .list .curr { font-size: 0; color: #444; }
+main .view .review .reviews .list .curr .total { font-size: 15px; margin-bottom: 12px; }
+main .view .review .reviews .list .curr .score { width: 50%; font-size: 15px; display: inline-block; }
+main .view .review .reviews .list .curr .long { width: 50%; font-size: 15px; display: inline-block; }
+main .view .review .reviews .list .curr .score .sub,
+main .view .review .reviews .list .curr .long .sub { font-weight: 700; }
+main .view .review .reviews .list .item { margin-top: 10px; padding: 10px 10px 13px; border: 1px solid #eaeaea; }
+main .view .review .reviews .list .item .reviewer { margin-bottom: 10px; font-size: 15px; color: #444; line-height: 2; }
+main .view .review .reviews .list .item .contents { font-size: 14px; line-height: 1.3; }
+
+/***** 마이페이지 *****/
+main .mypqge { }
+main .mypage .info { margin-bottom: 80px; }
+main .mypage .info .password { margin-top: 10px; }
+main .mypage .info .password span { font-size: 15px; color: #B993D6; cursor: pointer; }
+main .mypage .review .list .item { margin-top: 10px; padding: 10px 10px 13px; border: 1px solid #eaeaea; }
+main .mypage .review .list .item .delete { text-align: right; }
+main .mypage .review .list .item .delete .btn-delete { color: #444; cursor: pointer; }
+main .mypage .review .list .item .reviewer { margin-bottom: 10px; font-size: 14px; color: #444; line-height: 2; }
+main .mypage .review .list .item .reviewer a .txt { cursor: pointer; }
+main .mypage .review .list .item .reviewer a .txt:hover { color: #B993D6; }
+main .mypage .review .list .item .contents { font-size: 14px; line-height: 1.3; }
+
+/***** 푸터 *****/
+footer { width: 100%; margin-top: -56px; padding: 28px 0; text-align: center; font-size: 12px;  color: #aaa; border-top: 1px solid #eaeaea; }
